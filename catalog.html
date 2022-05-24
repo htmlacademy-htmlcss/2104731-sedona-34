@@ -179,16 +179,43 @@
             <span class="button button-rating">РЕЙТИНГ: 5,0</span>  
           </li>
         </ul>
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current pagination-disabled">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ul>
+        <div class="select-page-titel">Гостиниц на странице:</div>
+        <select class="select-page-option" aria-label="Гостиниц на странице">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4" selected="selected">4</option>
+        </select>
       </section>
 
-      <setion class="subscription">
+      <section class="subscription">
         <h2 class="white">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p> 
         <form action="https://echo.htmlacademy.ru" method="post">
           <input class="subscription-email" type="email" value="Ваш e-mail" name="e-mail" required>
           <button class="subscription-button" type="submit">ПОДПИСАТЬСЯ</button>
         </form>
-      </setion>
+      </section>
     </main>
 
     <footer class="page-footer">
