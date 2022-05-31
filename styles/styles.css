@@ -3,7 +3,7 @@
     font-size: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("fonts/ptsans-400.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-size: normal;
     font-weight: 700;
     font-display: swap;
-    src: url("fonts/ptsans-700.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
     font-size: italic;
     font-weight: 400;
     font-display: swap;
-    src: url("fonts/ptsans-400.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
 }
 
 @font-face {
@@ -27,5 +27,24 @@
     font-size: italic;
     font-weight: 700;
     font-display: swap;
-    src: url("fonts/ptsans-700.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+}
+
+body {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* Шапка */
+
+.page-header {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.navigation-link {
+    color: #000000;
 }
