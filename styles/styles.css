@@ -47,6 +47,11 @@ body {
     color: #ffffff;
 }
 
+.button {
+    color: #ffffff;
+    background-color: #000000;
+}
+
 /* Шапка */
 
 .page-header {
@@ -160,4 +165,70 @@ body {
     line-height: 40px;
     text-align: center;
     text-transform: uppercase;
+}
+
+/* Каталог */
+
+.main-inner {
+    background-image: url(../images/background-filter.jpg);
+    background-color: #8caeca;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #000000;
+}
+
+.inner-header-titel {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: #ffffff;
+}
+
+/* Фильтр */
+
+.catalog-hotel {
+    color: #ffffff;
+}
+
+.filter-legend {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.filter-list, .hotel-found, .pagination {
+    list-style: none;
+}
+
+.sorting {
+    color: #000000;
+}
+
+.sortihg-subtitel {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.hotel-card-titel {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.hotel-card a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Пагинация */
+
+.pagination a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.select-page-titel {
+    color: #000000;
 }
