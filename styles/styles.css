@@ -34,8 +34,17 @@ body {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 21px;
+    font-weight: 400;
     color: #000000;
     background-color: #ffffff;
+}
+
+.black {
+    color: #000000;
+}
+
+.white {
+    color: #ffffff;
 }
 
 /* Шапка */
@@ -47,4 +56,108 @@ body {
 
 .navigation-link {
     color: #000000;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Главная */
+
+.main-index {
+    background-image: url(../images/index-background.jpg);
+    background-color: #92bed7;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: #000000;
+}
+
+.main-subtitle {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.five-reasons {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+}
+
+.reasons-list {
+    list-style: none;
+}
+
+.reasons-list li {
+    text-align: center;
+}
+
+.reasons-item {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/* Поиск отелей */
+
+.hotel-subtitle {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hotel-text {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+}
+
+/* Форма подписки*/
+
+.subscription{
+    background-color: #99abba;
+    background-image: url(../images/backgrund-form.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #ffffff;
+}
+
+.subscription-subtitle {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.subscription-text {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+/* Подвал */
+
+.page-footer a {
+    color: #000000;
+    text-decoration: none
+}
+
+.social {
+    list-style: none;
+}
+
+.footer-tel {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
 }
