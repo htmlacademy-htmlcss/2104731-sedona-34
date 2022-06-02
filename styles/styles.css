@@ -39,13 +39,9 @@ body {
     background-color: #ffffff;
 }
 
-.black {
-    color: #000000;
-}
-
-.white {
+/*.white {
     color: #ffffff;
-}
+}*/
 
 .button {
     color: #ffffff;
@@ -108,12 +104,24 @@ body {
 }
 
 .reasons-item {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.reasons-item-white {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.reasons-subtitel {
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
     text-transform: uppercase;
 }
-
 
 /* Поиск отелей */
 
@@ -209,7 +217,13 @@ body {
 
 .sorting {
     color: #000000;
-    
+}
+
+.select-control {
+    color: #333333;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px
 }
 
 .sortihg-subtitel {
@@ -230,6 +244,15 @@ body {
     line-height: 28px;
 }
 
+.hotel-card-span {
+    color: #333333;
+}
+
+.hotel-card-price {
+    color: #333333;
+    font-weight: 400;
+}
+
 .button-card {
     font-weight: 700;
     font-size: 16px;
@@ -247,6 +270,8 @@ body {
 }
 
 .button-rating {
+    color: #000000;
+    background-color: #ffffff;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -262,5 +287,28 @@ body {
 }
 
 .select-page-titel {
+    color: #333333;
+}
+
+/* Подписка каталог */
+
+/* Форма подписки*/
+
+.subscription-catalog{
+    background-color: #ffffff;
     color: #000000;
+}
+
+.subscription-subtitle-catalog {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.subscription-text-catalog {
+    color: #333333;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
 }
