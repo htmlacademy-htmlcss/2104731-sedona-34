@@ -114,6 +114,11 @@ body {
   background-repeat: no-repeat, no-repeat;
 }
 
+ .welcome-title {
+   display: block;
+   margin: auto;
+ }
+
 .welcome-subtitle {
   font-size: 30px;
   line-height: 36px;
