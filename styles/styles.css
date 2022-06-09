@@ -30,7 +30,12 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -73,11 +78,15 @@ body {
 /* Главная */
 
 .main-index {
-  background-image: url(../images/index-background.jpg);
-  background-color: #92bed7;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
   color: #000000;
+}
+
+.main-container {
+  background-image: url(../images/divider.svg), url(../images/index-background.jpg);
+  background-color: #ffffff, #92bed7;
+  background-size: 100% auto, 100% auto;
+  background-position: bottom, center;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .main-subtitle {
@@ -291,8 +300,6 @@ body {
 }
 
 /* Подписка каталог */
-
-/* Форма подписки*/
 
 .subscription-catalog{
   background-color: #ffffff;
