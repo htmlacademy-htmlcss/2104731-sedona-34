@@ -14,22 +14,6 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
-@font-face {
-  font-family: "PT Sans";
-  font-size: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-size: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
-}
-
 html {
   height: 100%;
 }
@@ -114,10 +98,10 @@ body {
   background-repeat: no-repeat, no-repeat;
 }
 
- .welcome-title {
-   display: block;
-   margin: auto;
- }
+.welcome-title {
+  display: block;
+  margin: auto;
+}
 
 .welcome-subtitle {
   font-size: 30px;
@@ -223,7 +207,7 @@ body {
 
 /* Подвал */
 
-.page-footer-container{
+.page-footer-container {
   display: flex;
   width: 1200px;
   justify-content: space-between;
@@ -363,7 +347,7 @@ body {
 
 .button-rating {
   color: #000000;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
