@@ -36,6 +36,8 @@ html {
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -43,10 +45,6 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
-
-/*.white {
-  color: #ffffff;
-}*/
 
 .button {
   color: #ffffff;
@@ -59,6 +57,25 @@ body {
 .page-header {
   color: #000000;
   background-color: #ffffff;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 450px;
+}
+
+.navigation-user {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: 70px;
+  width: 300px;
 }
 
 .navigation-link {
@@ -82,14 +99,22 @@ body {
 }
 
 .main-container {
-  background-image: url(../images/divider.svg), url(../images/index-background.jpg);
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+}
+
+.welcome {
+  background-image: url(../images/backgroung-addition.svg), url(../images/index-background.jpg);
   background-color: #ffffff, #92bed7;
   background-size: 100% auto, 100% auto;
   background-position: bottom, center;
   background-repeat: no-repeat, no-repeat;
 }
 
-.main-subtitle {
+.welcome-subtitle {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -105,7 +130,11 @@ body {
 }
 
 .reasons-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .reasons-list li {
@@ -116,13 +145,24 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  width: 400px;
 }
 
-.reasons-item-white {
+.item-bridge,
+.item-town {
   color: #ffffff;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
+  background-color: #82B3D3;
+}
+
+.item-house,
+.item-souvenirs,
+.item-square,
+.item-tourists {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.item-road {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .reasons-subtitel {
@@ -151,7 +191,7 @@ body {
 
 /* Форма подписки*/
 
-.subscription{
+.subscription {
   background-color: #99abba;
   background-image: url(../images/backgrund-form.jpg);
   background-repeat: no-repeat;
@@ -174,6 +214,12 @@ body {
 
 /* Подвал */
 
+.page-footer-container{
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+}
+
 .page-footer a {
   color: #000000;
   text-decoration: none
@@ -181,14 +227,24 @@ body {
 
 .social {
   list-style: none;
+  width: 150px;
+  margin-left: 72px;
 }
 
 .footer-tel {
+  display: block;
+  width: 720px;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.footer-logo {
+  display: block;
+  width: 115px;
+  margin-right: 72px;
 }
 
 /* Каталог */
@@ -220,7 +276,9 @@ body {
   line-height: 26px;
 }
 
-.filter-list, .hotel-found, .pagination {
+.filter-list,
+.hotel-found,
+.pagination {
   list-style: none;
 }
 
@@ -301,7 +359,7 @@ body {
 
 /* Подписка каталог */
 
-.subscription-catalog{
+.subscription-catalog {
   background-color: #ffffff;
   color: #000000;
 }
