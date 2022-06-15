@@ -132,13 +132,15 @@ body {
   background-image: url(../images/backgroung-addition.svg), url(../images/index-background.jpg);
   background-color: #ffffff, #92bed7;
   background-size: 100% auto, 100% auto;
-  background-position: bottom, center;
+  background-position: bottom, top;
   background-repeat: no-repeat, no-repeat;
+  padding-top: 51px;
 }
 
 .welcome-title {
   display: block;
-  margin: auto;
+  margin: 0 auto;
+  margin-bottom: 82px;
 }
 
 .welcome-subtitle {
