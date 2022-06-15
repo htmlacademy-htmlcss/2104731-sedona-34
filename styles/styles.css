@@ -32,6 +32,17 @@ body {
   background-color: #E5E5E5;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button {
   color: #ffffff;
   background-color: #756157;
@@ -155,6 +166,10 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.image-reasons {
+  display: block;
 }
 
 /* Поиск отелей */
