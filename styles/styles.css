@@ -105,7 +105,7 @@ body {
 
 .navigation-user .navigation-link {
   min-width: 18px;
-  min-height: 18px;;
+  min-height: 18px;
 }
 
 .navigation-button {
@@ -144,6 +144,8 @@ body {
 }
 
 .welcome-subtitle {
+  margin: 0;
+  padding: 63px 290px 31px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -152,6 +154,8 @@ body {
 }
 
 .five-reasons {
+  margin: 0;
+  padding: 0 272px 90px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -171,27 +175,40 @@ body {
 }
 
 .reasons-item {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  width: 400px;
 }
 
-.item-bridge,
-.item-town {
+.item-town,
+.item-bridge {
   color: #ffffff;
   background-color: #82B3D3;
+  padding: 92px 85px;
 }
 
 .item-house,
-.item-souvenirs,
+.item-souvenirs {
+  background-color: rgba(131, 179, 211, 0.12);
+  padding: 80px 85px 81px;
+}
+
+.item-eat {
+  padding: 80px 85px 81px;
+}
+
 .item-square,
 .item-tourists {
   background-color: rgba(131, 179, 211, 0.12);
+  padding: 103px 85px 102px;
 }
 
 .item-road {
   background-color: rgba(131, 179, 211, 0.2);
+  padding: 103px 85px 102px;
 }
 
 .reasons-subtitel {
@@ -199,6 +216,18 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.number {
+  margin: 0;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.reasons-text {
+  margin: 0;
 }
 
 .image-reasons {
@@ -207,12 +236,18 @@ body {
 
 /* Поиск отелей */
 
+.hotel-search {
+  padding-top: 91px;
+}
+
 .hotel-subtitle {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .hotel-text {
@@ -220,6 +255,20 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin: 0;
+  margin-bottom: 56px;
+}
+
+.hotel-button {
+  margin: 0 313px 93px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 /* Форма подписки*/
@@ -230,6 +279,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #ffffff;
+  padding-top: 94px;
 }
 
 .subscription-subtitle {
@@ -237,16 +287,47 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .subscription-text {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin: 0 363px 46px;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 94px;
+}
+
+.subscription-email {
+  border: 0;
+  border-radius: 10px 0px 0px 10px;
+  background-color: #F2F2F2;
+  width: 578px;
+  padding: 20px 0 19px 22px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .subscription-button {
   background-color: #82B3D3;
+  width: 200px;
+  border-radius: 0px 10px 10px 0px;
+  border: 0;
+  padding: 12px 0 12px;
+  font-family: "PT Sans";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 /* Подвал */
@@ -255,6 +336,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
+  padding: 40px 70px 30px;
 }
 
 .page-footer a {
@@ -263,9 +345,17 @@ body {
 }
 
 .social {
+  display: flex;
   list-style-type: none;
   width: 150px;
-  margin-left: 72px;
+  margin: 0;
+  padding: 0;
+}
+
+.social .social-item {
+  min-width: 18px;
+  min-height: 14px;
+  padding: 0 10px;
 }
 
 .footer-tel {
@@ -276,12 +366,6 @@ body {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.footer-logo {
-  display: block;
-  width: 115px;
-  margin-right: 72px;
 }
 
 /* Каталог */
