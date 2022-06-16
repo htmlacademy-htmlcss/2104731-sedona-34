@@ -602,6 +602,7 @@ body {
   display: flex;
   margin-left: 73px;
   margin-right: 71px;
+  margin-bottom: 119px;
 }
 
 .pagination {
@@ -672,6 +673,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .subscription-text-catalog {
