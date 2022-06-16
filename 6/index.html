@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>HTML Academy: Седона</title>
+  <base href="https://htmlacademy-htmlcss.github.io/2104731-sedona-34/6/">
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="navigation">
+      <a class="logo" href=""><img src="images/logo-sedona.svg" width="139" height="70" alt="Логотип Седона"></a>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О Седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="navigation-user">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Избраное</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="button navigation-button" href="#">Хочу сюда!</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-index main-container">
+    <div class="page-container">
+      <div class="welcome">
+        <h1 class="visually-hidden">Седона</h1>
+        <img class="welcome-title" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать Седону">
+        <h2 class="welcome-subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
+
+      <section class="reasons">
+        <ul class="reasons-list">
+          <li class="reasons-item item-town">
+            <h3 class="reasons-subtitel">Настоящий городок</h3>
+            <span class="number">— №1 —</span>
+            <p class="reasons-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </li>
+          <li>
+            <img class="image-reasons" src="images/town.jpg" width="800" height="384" alt="Дома в Седоне">
+          </li>
+          <li class="reasons-item item-house">
+            <h3 class="reasons-subtitel">Жильё</h3>
+            <p class="reasons-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="reasons-item item-eat">
+            <h3 class="reasons-subtitel">Еда</h3>
+            <p class="reasons-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="reasons-item item-souvenirs">
+            <h3 class="reasons-subtitel">Сувениры</h3>
+            <p class="reasons-text">Не только китайского, но и настоящего местного производства!</p>
+          </li>
+          <li>
+            <img class="image-reasons" src="images/bridge.jpg" width="800" height="384" alt="Моста дьявола">
+          </li>
+          <li class="reasons-item item-bridge">
+            <h3 class="reasons-subtitel">Там есть мост дьявола</h3>
+            <span class="number">— №2 —</span>
+            <p class="reasons-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </li>
+          <li class="reasons-item item-square">
+            <h3 class="reasons-subtitel">Небольшая площадь</h3>
+            <span class="number">— №3 —</span>
+            <p class="reasons-text">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="reasons-item item-road">
+            <h3 class="reasons-subtitel">Красивая дорога</h3>
+            <span class="number">— №4 —</span>
+            <p class="reasons-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="reasons-item item-tourists">
+            <h3 class="reasons-subtitel">Мало туристов</h3>
+            <span class="number">— №5 —</span>
+            <p class="reasons-text">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="hotel-search">
+        <h2 class="hotel-subtitle">Заинтересовались?</h2>
+        <p class="hotel-text">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
+        <a class="button hotel-button" href="#">Поиск гостиницы в седоне</a>
+      </section>
+
+      <section class="subscription">
+        <h2 class="subscription-subtitle">Подпишитесь на рассылку</h2>
+        <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="subscription-email" type="email" value="Ваш e-mail" name="e-mail" required>
+          <button class=" button subscription-button" type="submit">Подписаться</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="page-footer ">
+    <div class="page-footer-container">
+      <ul class="social">
+        <li class="social-item">
+          <a href="https://vk.com/htmlacademy" target="_blank">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://t.me/htmlacademy" target="_blank">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-logo" href="https://htmlacademy.ru/" target="_blank">
+        <img class="footer-logo-image" src="images/logo-htmlacademy.svg" width="114.9" height="32.9" alt="HTML Academy">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
