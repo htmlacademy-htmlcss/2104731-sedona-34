@@ -513,8 +513,6 @@ body {
 
 .hotel-card {
   padding: 20px;
-  display: flex;
-  flex-direction: column;
 }
 
 .hotel-card-image {
