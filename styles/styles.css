@@ -1,6 +1,6 @@
 @font-face {
   font-family: "PT Sans";
-  font-size: normal;
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "PT Sans";
-  font-size: normal;
+  font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -130,7 +130,7 @@ body {
 
 .welcome {
   background-image: url(../images/backgroung-addition.svg), url(../images/index-background.jpg);
-  background-color: #ffffff, #92bed7;
+  background-color: #92bed7;
   background-size: 100% auto, 100% auto;
   background-position: bottom, top;
   background-repeat: no-repeat, no-repeat;
@@ -140,7 +140,8 @@ body {
 .welcome-title {
   display: block;
   margin: 0 auto;
-  margin-bottom: 82px;
+  padding-bottom: 82px;
+  margin-bottom: 63px;
 }
 
 .welcome-subtitle {
@@ -512,8 +513,6 @@ body {
 
 .hotel-card {
   padding: 20px;
-  display: flex;
-  flex-direction: column;
 }
 
 .hotel-card-image {
