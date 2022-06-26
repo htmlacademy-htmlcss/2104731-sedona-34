@@ -55,6 +55,23 @@ body {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  background-color: #615048;
+  outline: none;
+}
+
+.button:active {
+  color: #ffffff30;
+}
+
+.button:disabled {
+  background-color: #E5E5E5;
+}
+
 /* Шапка */
 
 .page-header {
@@ -411,6 +428,15 @@ body {
   line-height: 36px;
 }
 
+.subscription-button:hover {
+  background-color: #68A2CA;
+}
+
+.subscription-button:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
 /* Подвал */
 
 .page-footer-container {
@@ -567,6 +593,15 @@ body {
   margin-bottom: 20px;
 }
 
+.button-apply:hover {
+  background-color: #68A2CA;
+}
+
+.button-apply:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
 .button-reset {
   background-color: transparent;
   border: 0;
@@ -574,6 +609,22 @@ body {
   font-size: 16px;
   line-height: 20px;
   padding: 0;
+}
+
+.button-reset:hover {
+  background-color: transparent;
+  opacity: 0.6;
+}
+
+.button-reset:focus {
+  background-color: transparent;
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.button-reset:active {
+  background-color: transparent;
+  outline: none;
 }
 
 .sorting {
@@ -707,8 +758,26 @@ body {
   padding-bottom: 8px;
 }
 
+.button-favorites:hover {
+  background-color: #68A2CA;
+}
+
+.button-favorites:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
 .button-favorites-current {
   background-color: #7DB54F;
+}
+
+.button-favorites-current:hover {
+  background-color: #6C9E42;
+}
+
+.button-favorites-current:focus {
+  background-color: #6C9E42;
+  outline: none;
 }
 
 .hotel-card-star {
@@ -722,8 +791,8 @@ body {
   display: block;
 }
 
-.button-rating {
-  color: #000000;
+.card-rating {
+  color: #333333;
   background-color: #F2F2F2;
   font-weight: 400;
   font-size: 16px;
@@ -733,6 +802,7 @@ body {
   padding-top: 9px;
   padding-bottom: 8px;
   cursor: default;
+  border-radius: 4px;
 }
 
 
