@@ -496,6 +496,29 @@ body {
   list-style-type: none;
   display: flex;
   margin-bottom: 40px;
+  position: relative;
+}
+
+.breadcrumbs .breadcrumbs-list:nth-child(1) {
+  margin-right: 25px;
+}
+
+.breadcrumbs .breadcrumbs-list:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/icons/arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 9px;
+  left: 23px;
+  top: 6px;
+}
+
+.breadcrumbs-item {
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
 }
 
 /* Фильтр */
