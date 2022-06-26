@@ -21,15 +21,21 @@ html {
 body {
   margin: 0 auto;
   width: 1200px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  /* display: flex;
+  flex-direction: column; */
+  height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
   background-color: #E5E5E5;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .visually-hidden {
@@ -85,6 +91,7 @@ body {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
+  align-items: center;
   margin: 0;
   padding: 0;
   margin-left: auto;
@@ -106,6 +113,37 @@ body {
 .navigation-user .navigation-link {
   min-width: 18px;
   min-height: 18px;
+}
+
+.navigation-user .navigation-item:nth-child(1) .navigation-link {
+  background-image: url(../images/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-user .navigation-item:nth-child(2) .navigation-link {
+  background-image: url(../images/icons/favorite.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.favorites-counter {
+  position: relative;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  top: -8px;
+  left: 13px;
+  z-index: 1;
+  background-color: #7DB54F;
+  color: #ffffff;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  padding: 3.5px 1px;
+  box-sizing: border-box;
 }
 
 .navigation-button {
@@ -141,7 +179,6 @@ body {
   display: block;
   margin: 0 auto;
   padding-bottom: 82px;
-  margin-bottom: 63px;
 }
 
 .welcome-subtitle {
