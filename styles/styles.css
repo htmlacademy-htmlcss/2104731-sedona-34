@@ -428,15 +428,36 @@ body {
 .social {
   display: flex;
   list-style-type: none;
+  align-items: center;
   width: 150px;
   margin: 0;
   padding: 0;
 }
 
-.social .social-item {
+.social .social-item:nth-child(1) .social-link {
+  background-image: url(../images/icons/vkontakte.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social .social-item:nth-child(2) .social-link {
+  background-image: url(../images/icons/telegram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social .social-item:nth-child(3) .social-link {
+  background-image: url(../images/icons/youtube.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-link {
+  display: block;
+  cursor: pointer;
+  padding: 13px 14.5px;
   min-width: 18px;
   min-height: 14px;
-  padding: 0 10px;
 }
 
 .footer-tel {
