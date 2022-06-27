@@ -460,31 +460,42 @@ body {
   padding: 0;
 }
 
-.social .social-item:nth-child(1) .social-link {
-  background-image: url(../images/icons/vkontakte.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social .social-item:nth-child(2) .social-link {
-  background-image: url(../images/icons/telegram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social .social-item:nth-child(3) .social-link {
-  background-image: url(../images/icons/youtube.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .social-link {
   display: block;
   cursor: pointer;
   padding: 13px 14.5px;
   min-width: 18px;
   min-height: 14px;
+  position: relative;
 }
+
+.footer-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83B3D3;
+}
+
+.social-link:hover .footer-icon {
+  fill: #68A2CA;
+}
+
+.social-link:focus {
+  outline: none;
+}
+
+.social-link:focus .footer-icon {
+  fill: #68A2CA;
+  outline: none;
+}
+
+.social-link:active .footer-icon {
+  fill: #68A2CA30;
+}
+
 
 .footer-tel {
   display: block;
@@ -494,6 +505,43 @@ body {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.footer-tel:hover {
+  color: #756157;
+}
+
+.footer-tel:focus {
+  color: #756157;
+  outline: none;
+}
+
+.footer-tel:active {
+  color: #75615730;
+}
+
+.footer-logo {
+  display: block;
+}
+
+.footer-logo svg {
+  fill: #000000;
+}
+
+.footer-logo:hover svg {
+  fill: #756157;
+}
+
+.footer-logo:focus{
+  outline: none;
+}
+
+.footer-logo:focus svg {
+  fill: #756157;
+}
+
+.footer-logo:active svg {
+  fill: #75615730;
 }
 
 /* Каталог */
@@ -801,7 +849,6 @@ body {
   text-transform: uppercase;
   padding-top: 9px;
   padding-bottom: 8px;
-  cursor: default;
   border-radius: 4px;
 }
 
@@ -903,4 +950,5 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  padding: 0 362px;
 }
