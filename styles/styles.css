@@ -595,6 +595,30 @@ body {
   font-size: 16px;
 }
 
+.breadcrumbs-icon {
+  fill: #ffffff;
+}
+
+.breadcrumbs-icon:hover {
+  fill: #FFFFFF60;
+}
+
+.breadcrumbs-icon:active {
+  fill: #ffffff30;
+}
+
+.breadcrumbs-item:hover {
+  color: #FFFFFF60;
+}
+
+.breadcrumbs-item:focus {
+  outline: none;
+}
+
+.breadcrumbs-item:active {
+  color: #ffffff30;
+}
+
 /* Фильтр */
 
 .catalog {
