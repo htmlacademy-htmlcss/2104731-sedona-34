@@ -587,7 +587,7 @@ body {
   width: 6px;
   height: 9px;
   left: 23px;
-  top: 6px;
+  top: 8px;
 }
 
 .breadcrumbs-item {
@@ -597,7 +597,9 @@ body {
 }
 
 .breadcrumbs-icon {
+  position: relative;
   fill: #ffffff;
+  top: 1px;
 }
 
 .breadcrumbs-icon:hover {
@@ -931,9 +933,13 @@ body {
   cursor: pointer;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  padding: 14px 20px;
+  padding: 14px 32px 14px 20px;
   box-sizing: border-box;
   width: 290px;
+  background-image: url(../images/icons/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  appearance: none;
 }
 
 .select-control:hover {
@@ -1192,13 +1198,19 @@ body {
 }
 
 .select-page-option {
-  padding: 14px 130px 14px 20px;
-  font-family: "PT Sans";
+  padding: 14px 32px 14px 20px;
+  width: 160px;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  background-image: url(../images/icons/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  box-sizing: border-box;
+  appearance: none;
 }
 
 .select-page-option:hover {
