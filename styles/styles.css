@@ -583,6 +583,7 @@ body {
   background-image: url(../images/icons/arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   width: 6px;
   height: 9px;
   left: 23px;
@@ -626,6 +627,12 @@ body {
   margin-top: -10px;
 }
 
+.catalog-filter-title {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .catalog-filter {
   display: flex;
   justify-content: space-between;
@@ -636,6 +643,9 @@ body {
 }
 
 .filter-legend {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -643,6 +653,203 @@ body {
 
 .filter-list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  appearance: none;
+}
+
+.filter-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.control {
+  position: relative;
+  display: block;
+}
+
+.control-label {
+  margin-left: 35px;
+}
+
+.control-input[type="checkbox"],
+.control-input[type="radio"] {
+  position: absolute;
+  z-index: -1;
+}
+
+.control-input[type="checkbox"] + .control-mark {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  left: 0;
+}
+
+.control:hover .control-input[type="checkbox"] + .control-mark {
+  background-color: #ffffff60;
+}
+
+.control-input[type="checkbox"]:focus + .control-mark {
+  background-color: #ffffff60;
+  outline: 3px solid #83B3D3;
+  border: none;
+}
+
+.control:active .control-input[type="checkbox"] + .control-mark {
+  background-color: #ffffff30;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  background-image: url(../images/icons/check-mark.svg);
+  background-color: transparent;
+  width: 13px;
+  height: 10px;
+  top: 5px;
+  left: 4px;
+  content: "";
+}
+
+.control-input[type="radio"] + .control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  left: 0;
+}
+
+.control-input[type="radio"]:checked:focus + .control-mark {
+  outline: 3px solid #83B3D3;
+  border: none;
+}
+
+.control-input[type="radio"]:focus + .control-mark {
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.input-min {
+  border: 2px solid #ffffff;
+  border-radius: 4px 0 0 4px;
+  top: 2px;
+}
+
+.input-max {
+  border: 2px solid #ffffff;
+  border-radius: 0 4px 4px 0;
+  margin-left: -1px;
+}
+
+.input-min:hover,
+.input-max:hover {
+  border: 2px solid #ffffff60;
+}
+
+.input-min:focus,
+.input-max:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 3px #81B3D2;
+}
+
+.input-min:active,
+.input-max:active {
+  background-color: #756257;
+  outline: none;
+}
+
+.input-min +  span {
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  color: #ffffff30;
+}
+
+.input-max +  span {
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  color: #ffffff30;
+}
+
+.range-input {
+  width: 144px;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  padding-top: 14px;
+  padding-left: 20px;
+  padding-bottom: 13px;
+  color: #ffffff;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-scale {
+  position: relative;
+  width: 288px;
+  height: 4px;
+  background-color: #ffffff30;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.button-min {
+  top: -8px;
+}
+
+.button-max {
+  left: 235px;
+  top: -8px;
+}
+
+.range-button {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+.range-button:hover {
+  box-shadow: 0 4px 10px #ffffff25;
+}
+
+.range-button:focus {
+  box-shadow: 0 4px 10px #ffffff25;
+  outline: 3px solid #83B3D3;
+}
+
+.range-button:active {
+  box-shadow: 0 7x 15px #ffffff40;
+  outline: 2px solid #83B3D3;
 }
 
 .button-filter {
