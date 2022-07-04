@@ -200,7 +200,7 @@ body {
 .welcome {
   background-image: url(../images/backgroung-addition.svg), url(../images/index-background.jpg);
   background-color: #92bed7;
-  background-size: cover auto, 100% auto;
+  background-size: 100% auto, 100% auto;
   background-position: bottom, top;
   background-repeat: no-repeat, no-repeat;
   padding-top: 51px;
@@ -853,7 +853,7 @@ body {
 }
 
 .range-button:active {
-  box-shadow: 0 7x 15px #ffffff40;
+  box-shadow: 0 4px 10px #ffffff40;
   outline: 2px solid #83B3D3;
 }
 
@@ -1328,7 +1328,7 @@ body {
   flex-direction: column;
 }
 
-.form-item {
+.modal-wrapper-form {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 420px;
@@ -1339,13 +1339,13 @@ body {
   align-items: center;
 }
 
-.form-wrapper {
+.modal-input-wrapper {
   display: grid;
   grid-template-columns: 288px 230px;
   gap: 0 58px;
 }
 
-.form-wrapper-item {
+.input-wrapper {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 133px;
@@ -1486,7 +1486,7 @@ body {
   opacity: 0.2;
 }
 
-.form-wrapper-item .input-modal {
+.input-wrapper .input-modal {
   text-align: center;
   padding-left: 0;
 }
@@ -1542,8 +1542,8 @@ body {
   background-color: #68A2CA;
 }
 
-.tooltip-button:hover + .tooltip-text,
-.tooltip-button:focus + .tooltip-text {
+.tooltip-button:hover+.tooltip-text,
+.tooltip-button:focus+.tooltip-text {
   display: block;
 }
 

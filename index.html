@@ -172,24 +172,28 @@
         <section>
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="form-item">Дата заезда:
-              <input class="input-modal" type="text" name="arrival date" placeholder="27 апреля 2020">
+            <div class="modal-wrapper-form">
+              <label class="form-item" for="arrival-date">Дата заезда:</label>
+              <input class="input-modal" id="arrival-date" type="text" name="arrival date" placeholder="27 апреля 2020">
               <button class="modal-calendar" type="button">
                 <span class="visually-hidden">Открыть календарь</span>
               </button>
-            </label>
+            </div>
             <p class="modal-text modal-text-error">Мы не можем отправить вас в прошлое.</p>
-            <label class="form-item">Дата выезда:
-              <input class="input-modal" type="text" name="departure date" placeholder="27 апреля 2020">
+            <div class="modal-wrapper-form">
+              <label class="form-item" for="departure-date">Дата выезда:</label>
+              <input class="input-modal" id="departure-date" type="text" name="departure date"
+                placeholder="27 апреля 2020">
               <button class="modal-calendar" type="button">
                 <span class="visually-hidden">Открыть календарь</span>
               </button>
-            </label>
+            </div>
             <p class="modal-text">На эти даты есть свободные номера. Пока есть.</p>
-            <div class="form-wrapper">
-              <label class="form-wrapper-item">Взрослые:
+            <div class="modal-input-wrapper">
+              <div class="input-wrapper">
+                <label class="form-wrapper-item" for="adults">Взрослые:</label>
                 <div class="wrapper-input-modal">
-                  <input class="input-modal" type="text" name="adults" placeholder="2">
+                  <input class="input-modal" id="adults" type="text" name="adults" placeholder="2">
                   <button class="modal-input-min" type="button">
                     <span class="visually-hidden">Меньше</span>
                   </button>
@@ -197,14 +201,16 @@
                     <span class="visually-hidden">Больше</span>
                   </button>
                 </div>
-              </label>
-              <label class="form-wrapper-item">Дети:
+              </div>
+              <div class="input-wrapper">
+                <label class="form-wrapper-item" for="children">Дети:</label>
                 <span class="tooltip">
                   <button class="tooltip-button" type="button" aria-labelledby="tooltip-label">i</button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами,
+                    возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
                 <div class="wrapper-input-modal">
-                  <input class="input-modal" type="text" name="children" placeholder="1">
+                  <input class="input-modal" id="children" type="text" name="children" placeholder="1">
                   <button class="modal-input-min" type="button">
                     <span class="visually-hidden">Меньше</span>
                   </button>
@@ -212,7 +218,7 @@
                     <span class="visually-hidden">Больше</span>
                   </button>
                 </div>
-              </label>
+              </div>
             </div>
             <button class="button button-modal" type="submit">Найти</button>
           </form>
