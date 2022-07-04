@@ -42,8 +42,8 @@
       </nav>
     </header>
 
-    <main class="main-index main-container">
-      <div class="page-container">
+    <main class="main-index">
+      <div class="main-container">
         <div class="welcome">
           <h1 class="visually-hidden">Седона</h1>
           <img class="welcome-title" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать Седону">
@@ -111,7 +111,7 @@
           <h2 class="subscription-subtitle">Подпишитесь на рассылку</h2>
           <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="subscription-email" type="email" value="Ваш e-mail" name="e-mail" required>
+            <input class="subscription-email" type="email" placeholder="Ваш e-mail" name="e-mail" required>
             <button class=" button subscription-button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -163,6 +163,68 @@
         </a>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section>
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="modal-wrapper-form">
+              <label class="form-item" for="arrival-date">Дата заезда:</label>
+              <input class="input-modal" id="arrival-date" type="text" name="arrival date" placeholder="27 апреля 2020">
+              <button class="modal-calendar" type="button">
+                <span class="visually-hidden">Открыть календарь</span>
+              </button>
+            </div>
+            <p class="modal-text modal-text-error">Мы не можем отправить вас в прошлое.</p>
+            <div class="modal-wrapper-form">
+              <label class="form-item" for="departure-date">Дата выезда:</label>
+              <input class="input-modal" id="departure-date" type="text" name="departure date"
+                placeholder="27 апреля 2020">
+              <button class="modal-calendar" type="button">
+                <span class="visually-hidden">Открыть календарь</span>
+              </button>
+            </div>
+            <p class="modal-text">На эти даты есть свободные номера. Пока есть.</p>
+            <div class="modal-input-wrapper">
+              <div class="input-wrapper">
+                <label class="form-wrapper-item" for="adults">Взрослые:</label>
+                <div class="wrapper-input-modal">
+                  <input class="input-modal" id="adults" type="text" name="adults" placeholder="2">
+                  <button class="modal-input-min" type="button">
+                    <span class="visually-hidden">Меньше</span>
+                  </button>
+                  <button class="modal-input-max" type="button">
+                    <span class="visually-hidden">Больше</span>
+                  </button>
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <label class="form-wrapper-item" for="children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-button" type="button" aria-labelledby="tooltip-label">i</button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами,
+                    возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                <div class="wrapper-input-modal">
+                  <input class="input-modal" id="children" type="text" name="children" placeholder="1">
+                  <button class="modal-input-min" type="button">
+                    <span class="visually-hidden">Меньше</span>
+                  </button>
+                  <button class="modal-input-max" type="button">
+                    <span class="visually-hidden">Больше</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="button button-modal" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </div>
 </body>
 
