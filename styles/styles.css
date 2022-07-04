@@ -27,13 +27,14 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #000000;
-  background-color: #E5E5E5;
 }
 
 .page-container {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 20px #aaa7a7;
 }
 
 .visually-hidden {
@@ -137,7 +138,20 @@ body {
   background-color: #756257;
   left: 17px;
   right: 17px;
-  bottom: -1px;
+  bottom: 0px;
+}
+
+.navigation-link:hover {
+  color: #756157;
+}
+
+.navigation-link:focus {
+  color: #756157;
+  outline: none;
+}
+
+.navigation-link:active {
+  color: #75615730;
 }
 
 .navigation-user .navigation-link {
@@ -180,8 +194,8 @@ body {
 .navigation-button {
   display: block;
   box-sizing: border-box;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 700;
   margin: 14px 0 14px 20px;
   padding: 9px 15px 8px;
@@ -220,6 +234,10 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+}
+
+.reasons {
+  background-color: #ffffff;
 }
 
 .five-reasons {
@@ -339,6 +357,7 @@ body {
 
 .hotel-search {
   padding-top: 91px;
+  background-color: #ffffff;
 }
 
 .hotel-subtitle {
@@ -412,7 +431,7 @@ body {
   background-color: #F2F2F2;
   width: 578px;
   padding: 20px 0 19px 22px;
-  font-family: "PT Sans";
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -424,7 +443,7 @@ body {
   border-radius: 0px 10px 10px 0px;
   border: 0;
   padding: 12px 0 12px;
-  font-family: "PT Sans";
+  font-family: inherit;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
@@ -865,7 +884,7 @@ body {
 
 .button-apply {
   background-color: #82B3D3;
-  font-family: "PT Sans";
+  font-family: inherit;
   text-transform: uppercase;
   border: 0;
   box-sizing: border-box;
@@ -889,10 +908,11 @@ body {
 .button-reset {
   background-color: transparent;
   border: 0;
-  font-family: "PT Sans";
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   padding: 0;
+  text-transform: none;
 }
 
 .button-reset:hover {
@@ -1008,7 +1028,7 @@ body {
   padding-left: 73px;
   padding-right: 73px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0 18px;
   margin-bottom: 96px;
 }
@@ -1035,7 +1055,7 @@ body {
 
 .card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px 20px;
 }
 
@@ -1093,7 +1113,7 @@ body {
 
 .hotel-card-star {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   padding: 10px 0;
   gap: 0 6px;
 }
@@ -1270,9 +1290,9 @@ body {
   display: flex;
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal {
   position: relative;
