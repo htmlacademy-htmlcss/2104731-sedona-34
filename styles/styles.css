@@ -22,7 +22,7 @@ body {
   margin: 0 auto;
   width: 1200px;
   height: 100%;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
