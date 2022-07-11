@@ -927,6 +927,27 @@ body {
   margin: 0;
 }
 
+.range-input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.range-input::-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.range-input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.range-input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.range-input::placeholder {
+  color: #ffffff;
+}
+
 .range-scale {
   position: relative;
   width: 288px;
